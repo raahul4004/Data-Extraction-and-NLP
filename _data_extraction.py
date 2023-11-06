@@ -20,7 +20,7 @@ for i in  range(len(url_dataset)):
            URL_text += j.text
     
     #creating text files using the title as url_id and the content will be the URL_text
-    with open(f"{url_dataset.iloc[i,0]}.txt","w", encoding = 'utf-8') as file:
+    with open(f"Data_Extracted_from_Websites_to_text_files/{url_dataset.iloc[i,0]}.txt","w", encoding = 'utf-8') as file:
         file.write(URL_text)
     
 
